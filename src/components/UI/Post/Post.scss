@@ -1,0 +1,258 @@
+// .Post {
+//   box-shadow: 0 0 10px var(--light-gray);
+//   padding: calc(1vw + 11px);
+//   background-color: var(--elems-bgc);
+//   border-radius: 20px;
+//   margin-bottom: 20px;
+
+//   position: relative;
+
+//   &.liked {
+//     .iconWrapper {
+//       .iconLike {
+//         fill: var(--red);
+//         stroke: 0;
+//       }
+
+//       .likesCount {
+//         color: var(--red);
+//       }
+//     }
+//   }
+
+//   &.marked {
+//     .iconWrapper {
+//       .iconMark {
+//         fill: var(--prime-color);
+//         stroke: 0;
+//       }
+//     }
+//   }
+
+//   .UserElem {
+//     display: flex;
+//     align-items: center;
+//     cursor: default;
+//     margin-bottom: 30px;
+
+//     img {
+//       flex: 0 0 60px;
+//       height: 60px;
+//       border-radius: 50%;
+//       object-fit: cover;
+//       margin-right: 15px;
+//     }
+
+//     .userDescription {
+//       display: flex;
+//       flex-direction: column;
+//       .mainText {
+//         font-weight: bold;
+//       }
+//       .secondaryText {
+//         color: var(--secondary-color);
+//       }
+//     }
+//   }
+
+//   .postText {
+//     margin-bottom: 20px;
+//   }
+
+//   .mediaContainer {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 10px;
+
+//     .mediaItem {
+//       max-width: calc(33.333% - 10px);
+//       width: 100%;
+//       object-fit: cover;
+//       border-radius: 10px;
+//     }
+//   }
+
+//   .postControls {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     margin-top: 15px;
+
+//     .iconWrapper {
+//       display: flex;
+//       align-items: center;
+//       cursor: pointer;
+
+//       .icon {
+//         width: 24px;
+//         height: 24px;
+//         margin-right: 8px;
+//       }
+
+//       .count {
+//         font-size: 14px;
+//       }
+//     }
+//   }
+// }
+
+
+
+// .Post {
+//   box-shadow: 0 0 10px var(--light-gray);
+//   padding: calc(1vw + 11px);
+//   background-color: var(--elems-bgc);
+//   border-radius: 20px;
+//   margin-bottom: 20px;
+
+//   position: relative;
+
+//   &.liked {
+//     .iconWrapper {
+//       .iconLike {
+//         fill: var(--red);
+//         stroke: none;
+//       }
+//       .likesCount {
+//         color: var(--red);
+//       }
+//     }
+//   }
+
+//   &.marked {
+//     .iconWrapper {
+//       .iconMark {
+//         fill: var(--prime-color);
+//         stroke: none;
+//       }
+//     }
+//   }
+
+//   .UserElem {
+//     display: flex;
+//     align-items: center;
+//     cursor: default;
+//     margin-bottom: 30px;
+
+//     img {
+//       flex: 0 0 60px;
+//       height: 60px;
+//       border-radius: 50%;
+//       object-fit: cover;
+//       margin-right: 15px;
+//     }
+
+//     .userDescription {
+//       display: flex;
+//       flex-direction: column;
+
+//       .mainText {
+//         font-weight: bold;
+//       }
+
+//       .secondaryText {
+//         color: var(--secondary-color);
+//       }
+//     }
+//   }
+
+//   .postText {
+//     margin-bottom: 20px;
+//   }
+
+//   .mediaContainer {
+//     display: grid;
+//     gap: 5px;
+//     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+//     grid-auto-rows: minmax(300px, 400px);
+
+//     border-radius: 20px;
+//     margin-bottom: 40px;
+//     overflow: hidden;
+
+//     .mediaItem {
+//       object-fit: cover;
+//       width: 100%;
+//       height: 100%;
+//       border-radius: 5px;
+//     }
+//   }
+
+//   @media (max-width: 1480px) {
+//     .mediaContainer {
+//       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+//       grid-auto-rows: minmax(100px, 200px);
+//     }
+//   }
+
+//   .postControls {
+//     display: grid;
+//     grid-template-columns: repeat(3, auto) 2fr;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 15px;
+//     margin-top: 15px;
+
+//     .iconWrapper {
+//       cursor: pointer;
+//       padding: 10px;
+//       background-color: var(--bgc);
+//       border-radius: 15px;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       gap: 10px;
+
+//       -webkit-touch-callout: none;
+//       -webkit-user-select: none;
+//       -khtml-user-select: none;
+//       -moz-user-select: none;
+//       -ms-user-select: none;
+//       user-select: none;
+
+//       &:hover {
+//         background-color: var(--light-gray);
+//       }
+
+//       .count {
+//         color: var(--dark-gray);
+//         font-weight: 400;
+//       }
+
+//       .icon {
+//         height: 25px;
+//         overflow: visible;
+//         fill: transparent;
+//         transition: 200ms;
+//       }
+
+//       .icon-like {
+//         stroke: var(--dark-gray);
+//         stroke-width: 2px;
+//       }
+
+//       .icon-mark {
+//         stroke: var(--dark-gray);
+//         stroke-width: 2px;
+//       }
+
+//       &.mark {
+//         justify-self: self-end;
+//       }
+//     }
+//   }
+// }
+
+
+.post__image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.postImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
